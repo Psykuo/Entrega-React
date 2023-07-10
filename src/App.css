@@ -5,6 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  margin-bottom: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +15,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffe600;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #333;
+  padding: 20px;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #0077b5;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +37,111 @@
   to {
     transform: rotate(360deg);
   }
+}
+ 
+.carrito {
+  margin-left: 20px;
+}
+
+.navbar {
+  background-color: #ffe600;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  justify-content: space-between;
+}
+
+.navbar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+  color: #333;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  margin-left: 15px;
+  align-items: center;
+}
+
+.navbar-link {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #0077b5;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 15px;
+  margin-right: 30px;
+  margin-left: 40px;
+  font-size: 14px;
+  width: 600px;
+}
+
+.search-button {
+  background-color: #0077b5;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #005d8f;
+}
+
+.navbar-cart {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.cart-icon {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+
+.cart-icon .fa-shopping-cart {
+  font-size: 20px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #0077b5;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 50%;
 }
